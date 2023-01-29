@@ -1,0 +1,32 @@
+.search-form-container {
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #bada55;
+}
+
+.search-form {
+  padding: 20px;
+}
+
+input {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  padding: 6px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 1px solid #efefef;
+  padding: 6px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  margin-left: -5px;
+}
