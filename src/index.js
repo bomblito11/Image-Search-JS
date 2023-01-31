@@ -47,7 +47,7 @@ async function fetchImages(searchValue) {
     const totalHits = response.data.totalHits;
     const totalPages = Math.ceil(totalHits / 40);
 
-    if (page === 1) {
+    if (page === 1 && totalHits > 0) {
       Notiflix.Notify.info(`Horray! We found ${totalHits} images.`);
       loadMoreBtn.removeAttribute('hidden');
     }
@@ -56,6 +56,7 @@ async function fetchImages(searchValue) {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
       );
+      loadMoreBtn.setAttribute('hidden', 'hidden');
     }
 
     if (page === totalPages) {

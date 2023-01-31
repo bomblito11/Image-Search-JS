@@ -3,6 +3,14 @@
   margin: 0 auto;
   text-align: center;
   background-color: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #efefef;
+    padding: 20px;
+  }
 }
 
 .search-form {
@@ -12,6 +20,7 @@
 input {
   border: 1px solid #efefef;
   border-radius: 5px;
+  width: 500px;
   padding: 6px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
